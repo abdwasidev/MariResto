@@ -1,0 +1,60 @@
+@media screen and (max-width: 499px){
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+    
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+    
+        transition: transform 0.3s ease;
+    }
+
+    .menu {
+        display: grid;
+        list-style-type: none;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .off-canvas {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #hero {
+        background:url(../public/images/heros/hero-image_2-small.jpg) no-repeat center; 
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 651px) {
+    #hero {
+        background:url(../public/images/heros/hero-image_2-large.jpg) no-repeat center; 
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #restaurant .list-item {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #restaurant .list-item {
+        grid-template-columns: 1fr;
+    }
+
+    .review-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 15px;
+    }
+}
